@@ -1,0 +1,14 @@
+<!-- Stepper, the Step Into The Code mascot. Transparent, for use on the page.
+     The tile version used as the favicon is assets/favicon.svg. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="105 36 60 98" role="img"
+     aria-label="Step Into The Code">
+  <path d="M135 48 L135 104" stroke="#2FB8A6" stroke-width="17" stroke-linecap="round" fill="none"/>
+  <path d="M107 96 L135 130 L163 96 Z" fill="#2FB8A6"/>
+  <circle cx="124" cy="70" r="8.5" fill="#FFFFFF"/>
+  <circle cx="146" cy="70" r="8.5" fill="#FFFFFF"/>
+  <circle cx="126" cy="72" r="4" fill="#10312E"/>
+  <circle cx="148" cy="72" r="4" fill="#10312E"/>
+  <circle cx="128" cy="69" r="1.5" fill="#FFFFFF"/>
+  <circle cx="150" cy="69" r="1.5" fill="#FFFFFF"/>
+  <path d="M128 88 Q135 94 142 88" fill="none" stroke="#10312E" stroke-width="2.6" stroke-linecap="round"/>
+</svg>

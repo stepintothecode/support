@@ -1,0 +1,82 @@
+:root{
+  --bg:#0E1117; --panel:#151A22; --panel-hi:#1A212B; --line:#232B37; --line-hi:#313D4D;
+  --text:#E8ECF3; --dim:#8A9BA8; --faint:#6D7A88;
+  --teal:#2FB8A6; --gold:#FFD166; --youtube:#FF4B3E;
+  --radius:16px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg); color:var(--text);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+.wrap{max-width:520px;margin:0 auto;padding:56px 20px 72px}
+
+a:focus-visible,
+button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:6px}
+
+/* Brand */
+.brand{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.mark{width:52px;height:auto;display:block;filter:drop-shadow(0 6px 22px rgba(47,184,166,.28))}
+.brand-name{
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--dim);font-weight:600;
+}
+
+/* Message */
+.msg{text-align:center;margin:34px 0 32px}
+h1{font-size:27px;line-height:1.25;margin:0;letter-spacing:-.5px;font-weight:650}
+.from{color:var(--teal);font-size:14.5px;margin:10px 0 0;min-height:1.6em}
+.lede{color:var(--dim);margin:18px 0 0;font-size:15.5px}
+.lede b{color:var(--text);font-weight:600}
+
+/* Ways to give */
+.ways{display:flex;flex-direction:column;gap:10px}
+.way{
+  display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text);
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;transition:background .15s,border-color .15s;
+}
+.way:hover{background:var(--panel-hi);border-color:var(--line-hi)}
+.way .glyph{width:22px;height:22px;flex:0 0 auto;color:var(--dim);transition:color .15s}
+.way:hover .glyph{color:var(--teal)}
+.way .txt{flex:1;min-width:0}
+.way .name{font-weight:600;display:block;font-size:15.5px}
+.way .note{color:var(--dim);font-size:13px;display:block;margin-top:2px}
+.way .chev{width:15px;height:15px;flex:0 0 auto;color:#4A5666;transition:color .15s,transform .15s}
+.way:hover .chev{color:var(--dim);transform:translateX(2px)}
+
+.either{text-align:center;color:var(--dim);font-size:14px;margin:26px 0 0}
+.either b{color:var(--gold);font-weight:600}
+
+/* Where else to find the work */
+.more{text-align:center;margin:36px 0 0;padding-top:28px;border-top:1px solid var(--line)}
+.more-label{color:var(--dim);font-size:13.5px;margin:0 0 14px}
+.socials{display:flex;justify-content:center;gap:12px}
+.social{
+  display:grid;place-items:center;width:46px;height:46px;
+  background:var(--panel);border:1px solid var(--line);border-radius:13px;
+  color:var(--dim);transition:color .15s,background .15s,border-color .15s;
+}
+.social:hover{background:var(--panel-hi);border-color:var(--line-hi);color:var(--text)}
+.social-youtube:hover{color:var(--youtube)}
+.social svg{width:21px;height:21px}
+
+.fine{
+  color:var(--faint);font-size:12.5px;line-height:1.7;text-align:center;
+  margin:32px 0 0;
+}
+.back{
+  display:block;text-align:center;margin-top:24px;
+  color:var(--dim);font-size:13.5px;text-decoration:none;
+}
+.back:hover{color:var(--text)}
+
+@media (max-width:420px){
+  .wrap{padding:44px 18px 60px}
+  h1{font-size:24px}
+}

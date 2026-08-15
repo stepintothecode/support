@@ -1,0 +1,13 @@
+<!-- Stepper on a dark tile, sized for a browser tab. Same character as
+     assets/mascot.svg, which is the version the page itself shows. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#0E1117"/>
+  <g transform="translate(16,16) scale(0.245) translate(-135,-85)">
+    <path d="M135 48 L135 104" stroke="#2FB8A6" stroke-width="17" stroke-linecap="round" fill="none"/>
+    <path d="M107 96 L135 130 L163 96 Z" fill="#2FB8A6"/>
+    <circle cx="124" cy="70" r="8.5" fill="#FFFFFF"/>
+    <circle cx="146" cy="70" r="8.5" fill="#FFFFFF"/>
+    <circle cx="126" cy="72" r="4" fill="#10312E"/>
+    <circle cx="148" cy="72" r="4" fill="#10312E"/>
+  </g>
+</svg>

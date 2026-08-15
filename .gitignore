@@ -1,0 +1,16 @@
+# Dependencies (there are none, but npm creates these if anything is added)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local environment
+.env
+.env.local
