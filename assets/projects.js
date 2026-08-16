@@ -3,4 +3,7 @@
 const PROJECTS = {
   'ytclipnshare-web': { name: 'YTClipNShare', home: 'https://stepintothecode.github.io/ytclipnshare/' },
   'ytclipnshare-ext': { name: 'YTClipNShare', home: 'https://stepintothecode.github.io/ytclipnshare/' },
+  'housie-app': { name: 'Housie Bingo Caller: No Ads', home: 'https://stepintothecode.github.io/housie/' },
+  'housie-web': { name: 'Housie Bingo Caller: No Ads', home: 'https://stepintothecode.github.io/housie/' },
+  'housie-privacy': { name: 'Housie Bingo Caller: No Ads', home: 'https://stepintothecode.github.io/housie/' },
 };
