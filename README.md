@@ -28,6 +28,43 @@ A `?from=` that is not in `PROJECTS` is ignored and the page shows its generic
 wording. Nothing from the URL is ever written to the page, so a hand-typed value
 cannot put text on it.
 
+Use one `from` per surface rather than one per project, so it stays obvious
+which link people actually press. `housie-app`, `housie-web` and
+`housie-privacy` all point at the same entry.
+
+### From a phone app
+
+Two rules, and both of them get an app rejected if you get them wrong.
+
+**Open the real browser, never an in-app web view.** Apple requires donations
+to be collected outside the app. A web view showing a payment page is read as
+an in-app purchase that skipped Apple's billing, and it is refused. On Flutter
+that means `LaunchMode.externalApplication`, and the scheme has to be declared
+or the call silently fails:
+
+```xml
+<!-- android/app/src/main/AndroidManifest.xml -->
+<queries>
+  <intent>
+    <action android:name="android.intent.action.VIEW"/>
+    <data android:scheme="https"/>
+  </intent>
+</queries>
+```
+
+```xml
+<!-- ios/Runner/Info.plist -->
+<key>LSApplicationQueriesSchemes</key>
+<array><string>https</string></array>
+```
+
+**Say plainly that it buys nothing**, next to the button, not buried. Both
+stores treat "support" that unlocks anything as a purchase owed to their
+billing system. The wording used in the app is:
+
+> A voluntary tip, not a purchase. It buys no features, no priority support and
+> no say over the app. Opens in your browser.
+
 Also drop a `.github/FUNDING.yml` in each repo. That gets the native Sponsor
 button on the repo page for free:
 
