@@ -6,4 +6,6 @@ const PROJECTS = {
   'housie-app': { name: 'Housie Bingo Caller: No Ads', home: 'https://stepintothecode.github.io/housie/' },
   'housie-web': { name: 'Housie Bingo Caller: No Ads', home: 'https://stepintothecode.github.io/housie/' },
   'housie-privacy': { name: 'Housie Bingo Caller: No Ads', home: 'https://stepintothecode.github.io/housie/' },
+  'elefi-app':  { name: 'EleFi', home: 'https://github.com/stepintothecode/EleFi' },
+  'elefi-repo': { name: 'EleFi', home: 'https://github.com/stepintothecode/EleFi' },
 };
