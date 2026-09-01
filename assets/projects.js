@@ -29,4 +29,8 @@ const PROJECTS = {
     name: "EleFi",
     home: "https://github.com/stepintothecode/EleFi",
   },
+  "linkaudioplayer-app": {
+    name: "LinkAudioPlayer",
+    home: "https://github.com/stepintothecode/linkaudioplayer",
+  },
 };
