@@ -33,4 +33,8 @@ const PROJECTS = {
     name: "LinkAudioPlayer",
     home: "https://github.com/stepintothecode/linkaudioplayer",
   },
+  "multicalc-app": {
+    name: "MultiCalc",
+    home: "https://github.com/stepintothecode/multicalc",
+  },
 };
